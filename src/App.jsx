@@ -1,4 +1,4 @@
-import Article from "./components/Article";
+import Article from "./Components/Article";
 
 function App() {
 	return (
