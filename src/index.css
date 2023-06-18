@@ -476,6 +476,12 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.-left-\[99999px\] {
+  left: -99999px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -511,8 +517,8 @@ video {
 .place-items-center {
   place-items: center;
 }
-.gap-6 {
-  gap: 1.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 .border-b-2 {
   border-bottom-width: 2px;
@@ -547,12 +553,20 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold {
   font-weight: 700;
 }
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .text-teal-500 {
   --tw-text-opacity: 1;
