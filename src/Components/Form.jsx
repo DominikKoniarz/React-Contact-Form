@@ -16,15 +16,15 @@ const Form = () => {
 		});
 
 	return (
-		<section className="bg-white p-12 font-['Roboto'] sm:max-w-xl">
-			<h2 className="mx-auto w-fit text-4xl font-bold text-teal-500">
+		<section className="m-4 min-w-[200px] bg-white p-10 font-['Roboto'] sm:max-w-xl sm:p-12">
+			<h2 className=" mx-auto w-fit text-center text-3xl font-bold text-teal-500 sm:text-4xl">
 				React Contact Form
 			</h2>
 			<form
 				autoComplete="off"
 				name="contact-form"
 				onSubmit={handleSubmit}
-				className="flex flex-col gap-5 text-xl text-black"
+				className="flex flex-col gap-5 text-xl text-black "
 			>
 				<div className="mt-8 flex flex-col gap-5 sm:flex-row sm:gap-6">
 					<div className="flex flex-col">
@@ -36,10 +36,11 @@ const Form = () => {
 							name="firstname"
 							type="text"
 							placeholder="First Name"
-							className={`w-full border-b-2 placeholder-black outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150`}
+							className={`w-full border-b-2 placeholder-[#555] outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150 sm:min-w-[200px]`}
 							value={values.firstname}
 							onChange={handleChange}
 							onBlur={handleBlur}
+							size="5"
 						/>
 						{touched.firstname && errors.firstname ? (
 							<div className="text-xs text-red-500">{errors.firstname}</div>
@@ -54,10 +55,11 @@ const Form = () => {
 							name="lastname"
 							type="text"
 							placeholder="Last Name"
-							className="w-full border-b-2 placeholder-black outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150"
+							className="w-full border-b-2 placeholder-[#555] outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150 sm:min-w-[200px]"
 							value={values.lastname}
 							onChange={handleChange}
 							onBlur={handleBlur}
+							size="5"
 						/>
 						{touched.lastname && errors.lastname ? (
 							<div className="text-xs text-red-500">{errors.lastname}</div>
@@ -74,10 +76,11 @@ const Form = () => {
 							name="email"
 							type="email"
 							placeholder="Email Address"
-							className="w-full border-b-2 placeholder-black outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150"
+							className="w-full border-b-2 placeholder-[#555] outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150 sm:min-w-[200px]"
 							value={values.email}
 							onChange={handleChange}
 							onBlur={handleBlur}
+							size="5"
 						/>
 						{touched.email && errors.email ? (
 							<div className="text-xs text-red-500">{errors.email}</div>
@@ -92,10 +95,11 @@ const Form = () => {
 							name="phonenumber"
 							type="text"
 							placeholder="Phone Number"
-							className="w-full border-b-2 placeholder-black outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150"
+							className="w-full border-b-2 placeholder-[#555] outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150 sm:min-w-[200px]"
 							value={values.phonenumber}
 							onChange={handleChange}
 							onBlur={handleBlur}
+							size="5"
 						/>
 						{touched.phonenumber && errors.phonenumber ? (
 							<div className="text-xs text-red-500">{errors.phonenumber}</div>
@@ -110,11 +114,12 @@ const Form = () => {
 						name="message"
 						id="message"
 						placeholder="Your Message"
-						rows={1}
-						className="border-b-2 placeholder-black outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150"
+						rows="1"
+						className="border-b-2 placeholder-[#555] outline-none duration-150 focus:border-teal-500 focus:outline-none focus:duration-150 sm:min-w-[200px]"
 						value={values.message}
 						onChange={handleChange}
 						onBlur={handleBlur}
+						cols="1"
 					></textarea>
 					{touched.message && errors.message ? (
 						<div className="text-xs text-red-500">{errors.message}</div>
